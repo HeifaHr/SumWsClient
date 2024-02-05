@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/calculatrice/NewWebService?wsdl" uri="wsdl/localhost_8080/calculatrice/NewWebService.wsdl"/>
+    <system systemId="http://localhost:8080/calculatrice/NewWebService?xsd=1" uri="wsdl/localhost_8080/calculatrice/NewWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/calculatrice/facto?wsdl" uri="wsdl/localhost_8080/calculatrice/facto.wsdl"/>
+    <system systemId="http://localhost:8080/calculatrice/facto?xsd=1" uri="wsdl/localhost_8080/calculatrice/facto.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/calculatrice/division?wsdl" uri="wsdl/localhost_8080/calculatrice/division.wsdl"/>
+    <system systemId="http://localhost:8080/calculatrice/division?xsd=1" uri="wsdl/localhost_8080/calculatrice/division.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/calculatrice/Soustraction?wsdl" uri="wsdl/localhost_8080/calculatrice/Soustraction.wsdl"/>
+    <system systemId="http://localhost:8080/calculatrice/Soustraction?xsd=1" uri="wsdl/localhost_8080/calculatrice/Soustraction.xsd_1.xsd"/>
+</catalog>

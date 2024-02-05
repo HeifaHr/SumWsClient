@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-NewWebService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/NewWebService"/>
+        <property name="wsdl-NewWebService" location="xml-resources/web-service-references/NewWebService/wsdl/localhost_8080/calculatrice/NewWebService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/NewWebService" destdir="${build.generated.dir}/jax-wsCache/NewWebService" wsdl="${wsdl-NewWebService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/calculatrice/NewWebService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-NewWebService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/NewWebService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/NewWebService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-NewWebService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/NewWebService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/calculatrice"/>
+    </target>
+    <target name="wsimport-client-facto" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/facto"/>
+        <property name="wsdl-facto" location="xml-resources/web-service-references/facto/wsdl/localhost_8080/calculatrice/facto.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/facto" destdir="${build.generated.dir}/jax-wsCache/facto" wsdl="${wsdl-facto}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/calculatrice/facto?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-facto}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/facto"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/facto">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-facto" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/facto"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/calculatrice"/>
+    </target>
+    <target name="wsimport-client-division" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/division"/>
+        <property name="wsdl-division" location="xml-resources/web-service-references/division/wsdl/localhost_8080/calculatrice/division.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/division" destdir="${build.generated.dir}/jax-wsCache/division" wsdl="${wsdl-division}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/calculatrice/division?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-division}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/division"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/division">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-division" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/division"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/division"/>
+    </target>
+    <target name="wsimport-client-Soustraction" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Soustraction"/>
+        <property name="wsdl-Soustraction" location="xml-resources/web-service-references/Soustraction/wsdl/localhost_8080/calculatrice/Soustraction.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Soustraction" destdir="${build.generated.dir}/jax-wsCache/Soustraction" wsdl="${wsdl-Soustraction}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/calculatrice/Soustraction?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-Soustraction}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Soustraction"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Soustraction">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Soustraction" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Soustraction"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/soustraction"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-NewWebService, wsimport-client-facto, wsimport-client-division, wsimport-client-Soustraction"/>
+</project>
